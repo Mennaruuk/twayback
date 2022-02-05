@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+# Twayback: Downloading deleted Tweets from the Wayback Machine, made easy
 
-You can use the [editor on GitHub](https://github.com/Mennaruuk/twayback/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<div align="center">
+  
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+  
+[![windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=Microsoft)](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.exe)
+[![python](https://img.shields.io/badge/Download-Python-red?style=for-the-badge&logo=python)](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.zip)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![screenshot](https://i.imgur.com/oBeqt6V.png)
 
-### Markdown
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Finding and downloading deleted Tweets takes a lot of time. Thankfully, with this tool, it becomes a piece of cake! 🎂
 
-```markdown
-Syntax highlighted code block
+Twayback is a portmanteau of *Twitter* and the *Wayback Machine*. Enter your desired Twitter username, and let Twayback do the rest!
 
-# Header 1
-## Header 2
-### Header 3
+## Features
+ - Can download some or all of a user's archived deleted Tweets.
+ - Allows custom time range to narrow search for deleted Tweets archived between two dates.
+ - Differentiates between accounts that are active, suspended, or don't/no longer exist.
 
-- Bulleted
-- List
+## Usage
+    twayback -u USERNAME [OPTIONS]
+    
+    -u, --username        Specify target user's Twitter handle
+    -from, --fromdate     Narrow search for deleted Tweets *archived* on and after this date
+                          (can be combined with -to)
+    -to, --todate         Narrow search for deleted Tweets *archived* on and before this date
+                          (can be combined with -from)
 
-1. Numbered
-2. List
+## Installation
+### For Windows only
+ 1. [Download the EXE file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.exe)
+ 2. Launch Command Prompt in the EXE file's directory.
+ 3. Run the command `twayback -u USERNAME` (Replace `USERNAME` with your target handle).
 
-**Bold** and _Italic_ and `Code` text
+### For Windows, Linux, and macOS
+ 1. [Download the ZIP file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.zip)
+ 2. Extract ZIP file to a directory of your choice.
+ 3. Open terminal in that directory.
+ 4. Run the command `pip install -r requirements.txt`.
+ 5. Run the command `twayback -u USERNAME` (Replace `USERNAME` with your target handle).
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+For more information, check out the [Usage](#usage) section above.
 
-### Jekyll Themes
+## Things to keep in mind
+ - Quality of the HTML files depends on how the Wayback Machine saved them. Some are better than others.
+ - This tool is best for text. You might have some luck with photos. You cannot download videos.
+ - By definition, if an account is suspended or no longer exists, all their Tweets would be considered deleted.
+ - Custom date range is not about when Tweets were made, but rather when they were _archived_. For example, a Tweet from 2011 may have been archived today.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mennaruuk/twayback/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Future plans
+ - GUI. This is a biggie. I don't know shit about Python, let alone GUI. But I'm hoping I can design one using [Tkinter Designer](https://github.com/ParthJadhav/Tkinter-Designer). But I don't know how I can link actions to buttons and shit like that, that stuff is super foreign to me, so any help is appreciated, it would mean so much.
 
-### Support or Contact
+Plenty of thanks to jsvine for his amazing work on [waybackpack](https://github.com/jsvine/waybackpack). Without it, this tool cannot work nearly as well.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+I hope you enjoy my little script. Please use it for good. Whatever you are, be a good one.
