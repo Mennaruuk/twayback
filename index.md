@@ -1,6 +1,4 @@
 # Twayback: Downloading deleted Tweets from the Wayback Machine, made easy
-
-<div align="center">
   
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
   
@@ -9,7 +7,6 @@
 
 ![screenshot](https://i.imgur.com/oBeqt6V.png)
 
-</div>
 
 Finding and downloading deleted Tweets takes a lot of time. Thankfully, with this tool, it becomes a piece of cake! 🎂
 
