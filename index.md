@@ -1,7 +1,3 @@
-# Twayback: Downloading deleted Tweets from the Wayback Machine, made easy
-  
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-  
 [![windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=Microsoft)](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.exe)
 [![python](https://img.shields.io/badge/Download-Python-red?style=for-the-badge&logo=python)](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.zip)
 
