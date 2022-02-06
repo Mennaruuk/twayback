@@ -14,12 +14,11 @@ Twayback is a portmanteau of *Twitter* and the *Wayback Machine*. Enter your des
  - waybackpack
     - Install: `pip install waybackpack` or `pip3 install waybackpack`
     - [Link to repo](https://github.com/jsvine/waybackpack)
-
-
 ## Features
  - Can download some or all of a user's archived deleted Tweets.
  - Allows custom time range to narrow search for deleted Tweets archived between two dates.
  - Differentiates between accounts that are active, suspended, or don't/no longer exist.
+ - Lets you know if a target handle's archived Tweets have been excluded from the Wayback Machine.
 
 ## Usage
     twayback -u USERNAME [OPTIONS]
@@ -32,12 +31,12 @@ Twayback is a portmanteau of *Twitter* and the *Wayback Machine*. Enter your des
 
 ## Installation
 ### For Windows only
- 1. [Download the EXE file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.exe)
+ 1. [Download the EXE file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F06%2F2022/twayback.exe)
  2. Launch Command Prompt in the EXE file's directory.
  3. Run the command `twayback -u USERNAME` (Replace `USERNAME` with your target handle).
 
 ### For Windows, Linux, and macOS
- 1. [Download the ZIP file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F04%2F2022/twayback.zip)
+ 1. [Download the ZIP file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F06%2F2022/twayback.zip)
  2. Extract ZIP file to a directory of your choice.
  3. Open terminal in that directory.
  4. Run the command `pip install -r requirements.txt`.
