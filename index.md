@@ -8,15 +8,9 @@ Finding and downloading deleted Tweets takes a lot of time. Thankfully, with thi
 
 Twayback is a portmanteau of *Twitter* and the *Wayback Machine*. Enter your desired Twitter username, and let Twayback do the rest!
 
-
-## Requirements
- - Python 3
-    - [Download](https://www.python.org/downloads/) 
- - waybackpack
-    - Install: `pip install waybackpack` or `pip3 install waybackpack`
-    - [Link to repo](https://github.com/jsvine/waybackpack)
 ## Features
  - Can download some or all of a user's archived deleted Tweets.
+ - Lets you extract Tweets text to a text file (yes, even quote retweets!)
  - Allows custom time range to narrow search for deleted Tweets archived between two dates.
  - Differentiates between accounts that are active, suspended, or don't/no longer exist.
  - Lets you know if a target handle's archived Tweets have been excluded from the Wayback Machine.
@@ -35,12 +29,12 @@ Twayback is a portmanteau of *Twitter* and the *Wayback Machine*. Enter your des
 
 ## Installation
 ### For Windows only
- 1. [Download the latest EXE file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F11%2F2022/twayback.exe)
+ 1. [Download the latest EXE file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F12%2F2022/twayback.exe)
  2. Launch Command Prompt in the EXE file's directory.
  3. Run the command `twayback -u USERNAME` (Replace `USERNAME` with your target handle).
 
 ### For Windows, Linux, and macOS
- 1. [Download the latest ZIP file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F11%2F2022/twayback.zip)
+ 1. [Download the latest ZIP file.](https://github.com/Mennaruuk/twayback/releases/download/02%2F12%2F2022/twayback.zip)
  2. Extract ZIP file to a directory of your choice.
  3. Open terminal in that directory.
  4. Run the command `pip install -r requirements.txt`.
@@ -57,7 +51,5 @@ For more information, check out the [Usage](#usage) section above.
 
 ## Future plans
  - GUI. This is a biggie. I don't know shit about Python, let alone GUI. But I'm hoping I can design one using [Tkinter Designer](https://github.com/ParthJadhav/Tkinter-Designer). But I don't know how I can link actions to buttons and shit like that, that stuff is super foreign to me, so any help is appreciated, it would mean so much.
-
-Plenty of thanks to jsvine for his amazing work on [waybackpack](https://github.com/jsvine/waybackpack). Without it, this tool cannot work nearly as well.
 
 I hope you enjoy my little script. Please use it for good. Whatever you are, be a good one.
