@@ -1,5 +1,5 @@
-[![windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=Microsoft)](https://github.com/Mennaruuk/twayback/releases/download/02%2F13%2F2022/twayback.exe)
-[![python](https://img.shields.io/badge/Download-Python-red?style=for-the-badge&logo=python)](https://github.com/Mennaruuk/twayback/releases/download/02%2F13%2F2022/twayback.zip)
+[![windows](https://img.shields.io/badge/Download-Twayback%20New%20for%20Windows-blue?style=for-the-badge&logo=Microsoft)](https://github.com/Mennaruuk/twayback/releases/download/02%2F13%2F2022/twayback.exe)
+[![python](https://img.shields.io/badge/Download-Python%20script-red?style=for-the-badge&logo=python)](hhttps://github.com/Mennaruuk/twayback/releases/download/02%2F14%2F2022/twayback.zip)
 
 ![screenshot](https://i.imgur.com/oBeqt6V.png)
 
