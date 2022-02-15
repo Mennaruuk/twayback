@@ -113,6 +113,7 @@ class Download:
         for url, number in tqdm(fusion.items(), position=0, leave=True):
             while True:
                 try:
+                    time.sleep(3)
                     r = requests.get(url, allow_redirects=False)
                     directory = pathlib.Path(username)
                     directory.mkdir(exist_ok=True)
@@ -141,6 +142,7 @@ class Text:
         for url in tqdm(long_url, position=0, leave=True):
             while True:
                 try:
+                    time.sleep(3)
                     response2 = requests.get(url, allow_redirects=False).text
                     regex = re.compile('.*TweetTextSize TweetTextSize--jumbo.*')
                     try:
@@ -177,6 +179,7 @@ class Both:
         for url in tqdm(long_url, position=0, leave=True, desc="Parsing text..."):
             while True:
                 try:
+                    time.sleep(3)
                     response2 = requests.get(url, allow_redirects=False).text
                     regex = re.compile('.*TweetTextSize TweetTextSize--jumbo.*')
                     try:
@@ -204,6 +207,7 @@ class Both:
         for url, number in tqdm(fusion.items(), position=0, leave=True, desc="Downloading HTML pages..."):
             while True:
                 try:
+                    time.sleep(3)
                     r = requests.get(url, allow_redirects=False)
                     directory = pathlib.Path(username)
                     directory.mkdir(exist_ok=True)
