@@ -128,6 +128,7 @@ if answer.lower() == 'download':
     for url, number in tqdm(fusion.items(), position=0, leave=True):
         while True:
             try:
+                time.sleep(3)
                 r = requests.get(url, allow_redirects=False)
                 directory = pathlib.Path(username)
                 directory.mkdir(exist_ok=True)
@@ -148,6 +149,7 @@ elif answer.lower() == 'text':
     textlist = []
     textonly = []
     for url in tqdm(wayback, position=0, leave=True):
+        time.sleep(3)
         response2 = requests.get(url, allow_redirects=False).text
         regex = re.compile('.*TweetTextSize TweetTextSize--jumbo.*')
         try:
@@ -168,6 +170,7 @@ elif answer.lower() == 'both':
     textlist = []
     textonly = []
     for url in tqdm(wayback, position=0, leave=True, desc="Parsing text..."):
+        time.sleep(3)
         response2 = requests.get(url, allow_redirects=False).text
         regex = re.compile('.*TweetTextSize TweetTextSize--jumbo.*')
         try:
@@ -186,6 +189,7 @@ elif answer.lower() == 'both':
     for url, number in tqdm(fusion.items(), position=0, leave=True, desc="Downloading HTML pages..."):
         while True:
             try:
+                time.sleep(3)
                 r = requests.get(url, allow_redirects=False)
                 directory = pathlib.Path(username)
                 directory.mkdir(exist_ok=True)
